@@ -11,12 +11,13 @@
     <header>
         <img src="simbolo.jpg" alt="Banner União Soviética II" class="banner">
         <h1>União Soviética II - Portal Oficial</h1>
+        <p class="slogan">Trabalhando para um futuro mais igualitário</p>
     </header>
     
     <!-- Barra de Navegação -->
     <nav>
         <ul>
-            <li><a href="#" onclick="showPage('Cidadões')">Lista de Cidadões</a></li>
+            <li><a href="#" onclick="showPage('Cidadões')">Lista de Cidadãos</a></li>
             <li><a href="#" onclick="showPage('seguroDeVida')">Seguro de Vida</a></li>
             <li><a href="#" onclick="showPage('sobre')">Sobre Nós</a></li>
             <li><a href="#" onclick="showPage('servicos')">Serviços Governamentais</a></li>
@@ -26,23 +27,23 @@
 
     <!-- Seções do Site -->
     <div id="Cidadões" class="page">
-        <h2>Lista de Cidadões</h2>
+        <h2>Lista de Cidadãos</h2>
         <input type="text" id="searchInput" placeholder="Pesquise pelo nome do cidadão" onkeyup="searchObject()">
         <div id="objectList">
-            <div class="object" data-name="Felipe Ferrari Caixeta" data-status="Disponível" data-details="Laptop de última geração." data-image="images/laptop.jpg">
+            <div class="object" data-name="Felipe Ferrari Caixeta" data-status="Disponível" data-details="Líder do Partido. Responsável pelas comunicações oficiais." data-image="images/felipe.jpg">
                 <h2>Felipe Ferrari Caixeta</h2>
                 <p>Partido do Estado </p>
                 <p>Status: Disponível</p>
             </div>
-            <div class="object" data-name="Felipe Rodrigues Fontes" data-status="Em inspeção" data-details="Celular sob inspeção de segurança." data-image="images/celular.jpg">
+            <div class="object" data-name="Felipe Rodrigues Fontes" data-status="Em inspeção" data-details="Membro do comitê de segurança nacional." data-image="images/felipe_rodrigues.jpg">
                 <h2>Felipe Rodrigues Fontes</h2>
                 <p>Partido do Estado</p>
             </div>
-            <div class="object" data-name="Isabel Cunha Zeri" data-status="Indisponível" data-details="Impressora a laser quebrada." data-image="images/impressora.jpg">
+            <div class="object" data-name="Isabel Cunha Zeri" data-status="Indisponível" data-details="Engenheira chefe de projetos estatais." data-image="images/isabel.jpg">
                 <h2>Isabel Cunha Zeri</h2>
                 <p>Cidadã</p>
             </div>
-            <div class="object" data-name="Alexandre Ferraz Bianchi Gomes Alvez" data-status="Reservado" data-details="Projetor reservado para eventos oficiais." data-image="images/projetor.jpg">
+            <div class="object" data-name="Alexandre Ferraz Bianchi Gomes Alvez" data-status="Reservado" data-details="Diretor de operações estratégicas." data-image="images/alexandre.jpg">
                 <h2>Alexandre Ferraz Bianchi Gomes Alvez</h2>
                 <p>Cidadão</p>
             </div>
@@ -70,6 +71,7 @@
     <div id="sobre" class="page" style="display:none;">
         <h2>Sobre Nós</h2>
         <p>A União Soviética II é uma entidade dedicada à administração de recursos e serviços para o povo. Inspirada na estrutura administrativa histórica, nosso objetivo é criar uma sociedade mais igualitária e segura.</p>
+        <p>Trabalhamos incansavelmente para garantir que todos os cidadãos tenham acesso aos serviços estatais, garantindo prosperidade e segurança para as futuras gerações.</p>
     </div>
 
     <div id="servicos" class="page" style="display:none;">
@@ -80,6 +82,8 @@
             <li>Segurança Interna</li>
             <li>Ajuda Familiar</li>
             <li>Programas de Moradia</li>
+            <li>Educação Pública</li>
+            <li>Assistência Médica Universal</li>
         </ul>
     </div>
 
