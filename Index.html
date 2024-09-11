@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>União Soviética II - Portal Oficial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Banner com o logo e o nome do site -->
+    <header>
+        <img src="simbolo.jpg" alt="Banner União Soviética II" class="banner">
+        <h1>União Soviética II - Portal Oficial</h1>
+    </header>
+    
+    <!-- Barra de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('Cidadões')">Lista de Cidadões</a></li>
+            <li><a href="#" onclick="showPage('seguroDeVida')">Seguro de Vida</a></li>
+            <li><a href="#" onclick="showPage('sobre')">Sobre Nós</a></li>
+            <li><a href="#" onclick="showPage('servicos')">Serviços Governamentais</a></li>
+            <li><a href="#" onclick="showPage('contato')">Contate-nos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seções do Site -->
+    <div id="Cidadões" class="page">
+        <h2>Lista de Cidadões</h2>
+        <input type="text" id="searchInput" placeholder="Pesquise pelo nome do cidadão" onkeyup="searchObject()">
+        <div id="objectList">
+            <div class="object" data-name="Felipe Ferrari Caixeta" data-status="Disponível" data-details="Laptop de última geração." data-image="images/laptop.jpg">
+                <h2>Felipe Ferrari Caixeta</h2>
+                <p>Partido do Estado </p>
+                <p>Status: Disponível</p>
+            </div>
+            <div class="object" data-name="Felipe Rodrigues Fontes" data-status="Em inspeção" data-details="Celular sob inspeção de segurança." data-image="images/celular.jpg">
+                <h2>Felipe Rodrigues Fontes</h2>
+                <p>Partido do Estado</p>
+            </div>
+            <div class="object" data-name="Isabel Cunha Zeri" data-status="Indisponível" data-details="Impressora a laser quebrada." data-image="images/impressora.jpg">
+                <h2>Isabel Cunha Zeri</h2>
+                <p>Cidadã</p>
+            </div>
+            <div class="object" data-name="Alexandre Ferraz Bianchi Gomes Alvez" data-status="Reservado" data-details="Projetor reservado para eventos oficiais." data-image="images/projetor.jpg">
+                <h2>Alexandre Ferraz Bianchi Gomes Alvez</h2>
+                <p>Cidadão</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="seguroDeVida" class="page" style="display:none;">
+        <h2>Seguro de Vida</h2>
+        <p>Assine o seguro de vida da União Soviética II e proteja sua família e seu futuro. Preencha o formulário abaixo:</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required><br>
+            <label for="plano">Plano Escolhido:</label>
+            <select id="plano" name="plano">
+                <option value="basico">Básico</option>
+                <option value="completo">Completo</option>
+                <option value="premium">Premium</option>
+            </select><br>
+            <input type="submit" value="Assinar Seguro">
+        </form>
+    </div>
+
+    <div id="sobre" class="page" style="display:none;">
+        <h2>Sobre Nós</h2>
+        <p>A União Soviética II é uma entidade dedicada à administração de recursos e serviços para o povo. Inspirada na estrutura administrativa histórica, nosso objetivo é criar uma sociedade mais igualitária e segura.</p>
+    </div>
+
+    <div id="servicos" class="page" style="display:none;">
+        <h2>Serviços Governamentais</h2>
+        <p>Oferecemos uma variedade de serviços para o cidadão, incluindo:</p>
+        <ul>
+            <li>Previdência Social</li>
+            <li>Segurança Interna</li>
+            <li>Ajuda Familiar</li>
+            <li>Programas de Moradia</li>
+        </ul>
+    </div>
+
+    <div id="contato" class="page" style="display:none;">
+        <h2>Contate-nos</h2>
+        <p>Entre em contato com a administração da União Soviética II:</p>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea><br>
+            <input type="submit" value="Enviar Mensagem">
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2024 União Soviética II - Todos os direitos reservados</p>
+        <p>Contato: oficial@uniaosovieticaII.gov</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
