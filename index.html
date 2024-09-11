@@ -1,11 +1,34 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pesquisa de Objetos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>SovietUnion</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut, laudantium eos voluptas incidunt animi aspernatur dolorum assumenda dolor pariatur dolore expedita perferendis earum ullam! Modi rem eos dicta illo? Similique!</p>
+    <h1>Pesquisa de Objetos</h1>
+    <input type="text" id="searchInput" placeholder="Pesquise pelo nome do objeto" onkeyup="searchObject()">
+    <div id="objectList">
+        <div class="object" data-name="Laptop" data-status="Disponível">
+            <h2>Laptop</h2>
+            <p>Status: Disponível</p>
+        </div>
+        <div class="object" data-name="Celular" data-status="Em manutenção">
+            <h2>Celular</h2>
+            <p>Status: Em manutenção</p>
+        </div>
+        <div class="object" data-name="Impressora" data-status="Indisponível">
+            <h2>Impressora</h2>
+            <p>Status: Indisponível</p>
+        </div>
+        <div class="object" data-name="Projetor" data-status="Disponível">
+            <h2>Projetor</h2>
+            <p>Status: Disponível</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
