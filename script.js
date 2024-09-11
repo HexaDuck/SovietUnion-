@@ -1,3 +1,15 @@
+// Função para alternar entre as abas (páginas)
+function showPage(pageId) {
+    // Ocultar todas as páginas
+    var pages = document.getElementsByClassName('page');
+    for (var i = 0; i < pages.length; i++) {
+        pages[i].style.display = 'none';
+    }
+
+    // Exibir a página selecionada
+    document.getElementById(pageId).style.display = 'block';
+}
+
 // Função de busca para o inventário de cidadãos
 function searchObject() {
     // Pegando o valor de entrada de pesquisa
@@ -18,3 +30,8 @@ function searchObject() {
         }
     });
 }
+
+// Inicializar a página exibindo a primeira aba ao carregar o site
+window.onload = function() {
+    showPage('Cidadões');  // Mostra a primeira aba (Lista de Cidadões) ao iniciar
+};
